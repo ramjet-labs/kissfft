@@ -40,7 +40,8 @@ tarball: clean
 clean:
 	cd test && make clean
 	cd tools && make clean
-	rm -f kiss_fft*.tar.gz *~ *.pyc kiss_fft*.zip 
+	rm -f kiss_fft*.tar.gz *~ *.pyc kiss_fft*.zip
+	rm -f *.a *.o *.so *.dylib
 
 asm: kiss_fft.s
 
